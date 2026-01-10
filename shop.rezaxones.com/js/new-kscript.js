@@ -328,7 +328,7 @@ $(document).ready(function(){
         show_text_address('', '#register_city_id', '');
     });
 
-    if (logged_in_id == '') {
+    if (typeof logged_in_id !== "undefined" && logged_in_id == '') { //"logged in" is not exits then not excute
         $(document).on('change', '#vnward_id', function () {
             // changeInfoCheckout('address_info');
             changeInfoCheckoutV2('update_address');
