@@ -1,5 +1,12 @@
 @import url("https://rscdn.rezaxones.com/shop.rezaxones.com/fonts/stylesheet_poppins.css");
 @import url("https://rscdn.rezaxones.com/shop.rezaxones.com/fonts/montserrat.css");
+@font-face {
+  font-family: 'icomoon';
+  src: url('https://rscdn.rezaxones.com/shop.rezaxones.com/fonts/icomoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* It Hard To debug i cannot fix this bug lol =)) i reverse website and see this file */
 /* Owl-carousel */
 .owl-carousel .owl-nav > div {
 	width: 30px;
