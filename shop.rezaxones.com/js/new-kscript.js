@@ -1224,7 +1224,7 @@ $(document).ready(function(){
         placeholder: 'MÃ£ nhÃ¢n viÃªn há»— trá»£'
     });
     }
-    
+
 });
 
 function process_check_showroom()
@@ -1818,6 +1818,7 @@ $(function() {
     $("img.lazy").lazyload({
         threshold : 0, //If Customer/Viewer/Buyer Was See This Picture Then Load Picture Else No Load
         effect : "fadeIn",
+        skip_invisible : false,
     });
 });
 
@@ -1826,6 +1827,7 @@ $(function() {
 if(lazyload == true) {
 set_threshold = 0;
 set_effect = "fadein";
+set_skip_invisible = false;
 }
 else {
     set = do_nothing;
