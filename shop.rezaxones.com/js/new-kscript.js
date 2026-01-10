@@ -1814,10 +1814,23 @@ function show_modal_pin()
 
 $(function() {
     $("img.lazy").lazyload({
-        threshold : 200,
+        threshold : 0, //If Customer/Viewer/Buyer Was See This Picture Then Load Picture Else No Load
         effect : "fadeIn",
     });
 });
+
+// C++ Log//
+/*
+if(lazyload == true) {
+set_threshold = 0;
+set_effect = "fadein";
+}
+else {
+    set = do_nothing;
+}
+*/
+// End //
+
 
 function show_product_by_sku(list_product_sku)
 {
