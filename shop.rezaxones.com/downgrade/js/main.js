@@ -571,7 +571,7 @@
         //     $(this).toggleClass('checked');
         //     $(".thumb-product img[data-id='" + id +"']").attr('src', image_url);
         // });
-        $('.contact-form-wrapper button').click(function(e) {
+        /* $('.contact-form-wrapper button').click(function(e) {
             e.preventDefault();
             if($( 'input.form-control' ).val() == ''){
                 $(".list-success").hide();
@@ -588,13 +588,13 @@
                 $(".list-success").html('<p><i class="icon-ic_close"></i>Cáº£m Æ¡n báº¡n Ä‘Ã£ liÃªn há»‡, chÃºng tÃ´i sáº½ tráº£ lá»i báº¡n trong thá»i gian sá»›m nháº¥t cÃ³ thá»ƒ</p>');
 
             }
-        });
+        }); */
 
         $('.list-success').click(function(){
             $(this).hide();
         });
 
-        $('button[name=btn_continue_step2]').on('click', function () {
+        /* $ ('button[name=btn_continue_step2]').on('click', function () {
             setBusy();
 
             if (typeof check_otp_order !== undefined && check_otp_order == 1) {
@@ -625,7 +625,7 @@
             } else {
                 $(this).parents('form').submit();
             }
-        });
+        }); */
 
         $('.checkout .view-more-product .btn').on('click', function () {
            $('.checkout .checkout-my-cart').toggle();
@@ -661,7 +661,7 @@
         $('[data-toggle="tooltip"]').tooltip();
 
         //popup enabled
-        if (popup_enabled.length > 0) {
+        if (typeof popup_enabled !== "undefined" && popup_enabled.length > 0) {
             for (let i = 0; i < popup_enabled.length; i++ ) {
                 if (popup_enabled[i]['popup_time_delay'] == 0) {
                     $('.popup-' + popup_enabled[i]['popup_key']).show();
@@ -683,7 +683,7 @@
         });
 
         //ivysupport  
-        $('.box-reply .btn-close').on('click', function() {
+        /* $('.box-reply .btn-close').on('click', function() {
             if (confirm('Báº¡n cháº¯n cháº¯n muá»‘n Ä‘Ã³ng tháº£o luáº­n?')) {
                 let support_id = $('input[name=support_id]').val();
 
@@ -715,7 +715,6 @@
 
         $('form[id=frm_cart]').on('submit', function (e) {
             e.preventDefault();
-        });
+        }); */
     });
-})(jQuery);
-
+})(jQuery); 
