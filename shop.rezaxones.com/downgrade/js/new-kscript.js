@@ -1225,7 +1225,7 @@ $(document).ready(function(){
     });
 });
 
-/* function process_check_showroom()
+function process_check_showroom()
 {
     var check_login = $('#hid_login').val();
     var hid_ip = $('#hid_ip').val();
@@ -1248,7 +1248,7 @@ $(document).ready(function(){
         var log_info = jQuery.parseJSON(real_ip_xxx);
         showInfoShop(log_info.latitude, log_info.longitude);
     }
-} */
+}
 
 function showErrorPosition(error) {
     switch(error.code) {
@@ -1268,12 +1268,12 @@ function showErrorPosition(error) {
     }
 }
 
-/*function setCookieLatLong(str){
+function setCookieLatLong(str){
     var hid_ip = $('#hid_ip').val();
     Cookies.set(hid_ip, str, { expires: 365, path: ''});
-} */
+}
 
-/* function showInfoShop(lat, long, count_call)
+function showInfoShop(lat, long, count_call)
 {
     var product_key = $('#hid_product_key').val();
     if(count_call == '')
@@ -1310,9 +1310,9 @@ function showErrorPosition(error) {
         //console.log('error-connection');
         remove_loading();
     });
-} */
+}
 
-/* function findAtTheShop(city_name, district_name, count_call)
+function findAtTheShop(city_name, district_name, count_call)
 {
     var product_key = $('#hid_product_key').val();
     if(count_call == '')
@@ -1344,15 +1344,15 @@ function showErrorPosition(error) {
         //console.log('error-connection');
         clearBusy();
     });
-} */
+}
 
-/* function showLocation(position) {
+function showLocation(position) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
     showInfoShop(latitude, longitude);
 }
 
- function changeInfoCheckoutV2(type) {
+function changeInfoCheckoutV2(type) {
     if (!type) return;
 
     const data = {
@@ -1483,7 +1483,7 @@ function showErrorPosition(error) {
     }).always(function () {
         clearBusy();
     });
-} */
+}
 
 function changeInfoCheckout(type)
 {
