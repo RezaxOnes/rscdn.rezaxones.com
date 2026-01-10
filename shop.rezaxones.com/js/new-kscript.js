@@ -1219,10 +1219,12 @@ $(document).ready(function(){
         if (value == 'Chá»�n Quáº­n/Huyá»‡n') value = '';
         findAtTheShop($('#find_shop_region_id option:selected').text(), value, '');
     });
-
+    if ($.fn.select2) { 
     $('#order_account_code').select2({
         placeholder: 'MÃ£ nhÃ¢n viÃªn há»— trá»£'
     });
+    }
+    
 });
 
 function process_check_showroom()
